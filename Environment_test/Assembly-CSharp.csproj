@@ -64,16 +64,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\lagCamera.cs" />
-    <Compile Include="Assets\satelliteThruster.cs" />
+    <Compile Include="Assets\FlameControl.cs" />
     <Compile Include="Assets\Script\Attractor.cs" />
     <Compile Include="Assets\Script\Cam_Circling.cs" />
     <Compile Include="Assets\Script\CrashDetection.cs" />
     <Compile Include="Assets\Script\Gesture.cs" />
+    <Compile Include="Assets\Script\lagCamera.cs" />
     <Compile Include="Assets\Script\Propulsion.cs" />
-    <Compile Include="Assets\Ship.cs" />
-    <Compile Include="Assets\ShipInput.cs" />
-    <Compile Include="Assets\ShipPhysics.cs" />
+    <Compile Include="Assets\Script\satelliteThruster.cs" />
+    <Compile Include="Assets\Script\Ship.cs" />
+    <Compile Include="Assets\Script\ShipInput.cs" />
+    <Compile Include="Assets\Script\ShipPhysics.cs" />
+    <Compile Include="Assets\Script\TimeScale.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Environment_test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
