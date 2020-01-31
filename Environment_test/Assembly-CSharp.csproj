@@ -64,10 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\FlameControl.cs" />
     <Compile Include="Assets\Script\Attractor.cs" />
     <Compile Include="Assets\Script\Cam_Circling.cs" />
     <Compile Include="Assets\Script\CrashDetection.cs" />
+    <Compile Include="Assets\Script\FlameControl.cs" />
     <Compile Include="Assets\Script\Gesture.cs" />
     <Compile Include="Assets\Script\lagCamera.cs" />
     <Compile Include="Assets\Script\Propulsion.cs" />

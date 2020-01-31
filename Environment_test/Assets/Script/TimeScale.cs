@@ -20,4 +20,5 @@ public class TimeScale : MonoBehaviour
     {
         Time.timeScale = timeScale;
     }
+
 }
