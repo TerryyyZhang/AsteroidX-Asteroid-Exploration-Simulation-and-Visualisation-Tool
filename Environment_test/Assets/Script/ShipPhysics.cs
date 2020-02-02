@@ -31,6 +31,8 @@ public class ShipPhysics : MonoBehaviour
 
     private Rigidbody rbody;
 
+    
+
     // Keep a reference to the ship this is attached to just in case.
     private Ship ship;
 
@@ -44,10 +46,12 @@ public class ShipPhysics : MonoBehaviour
         }
 
         ship = GetComponent<Ship>();
+        
     }
 
     private void Update()
     {
+
         
     }
 
@@ -57,6 +61,7 @@ public class ShipPhysics : MonoBehaviour
         {
             rbody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Acceleration);
             rbody.AddRelativeTorque(appliedAngularForce * forceMultiplier, ForceMode.Force);
+            
         }
     }
 

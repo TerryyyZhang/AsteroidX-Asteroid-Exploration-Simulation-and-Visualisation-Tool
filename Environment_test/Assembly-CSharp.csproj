@@ -76,6 +76,16 @@
     <Compile Include="Assets\Script\ShipInput.cs" />
     <Compile Include="Assets\Script\ShipPhysics.cs" />
     <Compile Include="Assets\Script\TimeScale.cs" />
+    <Compile Include="Assets\Script\Trajectory.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\LaunchDelayDestroy.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\Launcher.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\Launcher2D.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\LauncherFPS.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\MouseOrbit.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\Orbiter.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\ExampleScenes\Scripts\RBFPSController.cs" />
+    <Compile Include="Assets\TrajectoryPredictor\TrajectoryPredictor.cs" />
+    <None Include="Assets\TrajectoryPredictor\README.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Environment_test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
