@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1205,8 +1205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f597c54c08466c4994eb5c79935b3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rendezvous: 1
-  xferAtStart: 1
+  rendezvous: 0
+  xferAtStart: 0
   orbit1: {fileID: 1366408940}
   orbit2: {fileID: 1121658138}
   centerBody: {fileID: 1188877103}
@@ -2030,6 +2030,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: vel.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: vel_phys.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: initialPos.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: initialPos.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: initialPhysPosition.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
+        type: 3}
+      propertyPath: initialPhysPosition.y
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 435436, guid: 2b668803c77ba484c9dd5389fe5c64c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2061,36 +2091,6 @@ PrefabInstance:
     - target: {fileID: 435436, guid: 2b668803c77ba484c9dd5389fe5c64c3, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: vel.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: vel_phys.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: initialPos.x
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: initialPos.y
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: initialPhysPosition.x
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 114946726973374330, guid: 2b668803c77ba484c9dd5389fe5c64c3,
-        type: 3}
-      propertyPath: initialPhysPosition.y
-      value: -30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b668803c77ba484c9dd5389fe5c64c3, type: 3}
