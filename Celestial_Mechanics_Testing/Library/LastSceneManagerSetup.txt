@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/HohmannTest.unity
+- path: Assets/GravityEngine/Scenes/MiniGames/Scenes/Re-entry.unity
   isLoaded: 1
   isActive: 1
