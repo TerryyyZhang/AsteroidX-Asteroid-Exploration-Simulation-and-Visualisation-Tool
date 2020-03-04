@@ -63,6 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AsteroidBelt\BeltObject.cs" />
+    <Compile Include="Assets\AsteroidBelt\BeltSpawner.cs" />
+    <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
+    <Compile Include="Assets\ColliderDetector.cs" />
+    <Compile Include="Assets\GoalSelector.cs" />
+    <Compile Include="Assets\lagCamera.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\DebugPanelController.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\FPSMeter.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\ProgressbarController.cs" />
@@ -137,6 +143,7 @@
     <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerParticles.cs" />
     <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerStateTransisation.cs" />
     <Compile Include="Assets\Polarith\AI\Examples\Scripts\VehiclePhysics.cs" />
+    <Compile Include="Assets\UpdateLayer.cs" />
     <None Include="Assets\Polarith\AI\Plugins\Shaders\Splat.shader" />
     <None Include="Assets\Polarith\AI\Plugins\Shaders\Extrude.shader" />
     <None Include="Assets\Polarith\AI\Plugins\Polarith.AI.xml" />
@@ -365,6 +372,9 @@
     <Reference Include="Pathfinding.Poly2Tri">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
     </Reference>
+    <Reference Include="Polarith.AI">
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -373,9 +383,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Polarith.AI">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

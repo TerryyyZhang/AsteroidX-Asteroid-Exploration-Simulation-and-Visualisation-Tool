@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GravityEngine/Scenes/MiniGames/Scenes/Re-entry.unity
+- path: Assets/Scenes/Manual Control with Trajectory Prediction.unity
   isLoaded: 1
   isActive: 1

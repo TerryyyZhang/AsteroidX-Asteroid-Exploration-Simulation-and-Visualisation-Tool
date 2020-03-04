@@ -21,9 +21,9 @@ namespace Polarith.AI.Package
         [SerializeField]
         private Camera cam;
 
-        [Tooltip("Target X-value of the camera´s rotation.")]
+        [Tooltip("Target camera´s rotation.")]
         [SerializeField]
-        private float cameraAngle = 30;
+        private Vector3 cameraAngle = Vector3.zero;
 
         [Tooltip("Affects how fast movement changes of the target are applied to the camera.")]
         [SerializeField]
@@ -84,7 +84,7 @@ namespace Polarith.AI.Package
         /// <summary>
         /// Target X-value of the camera´s rotation.
         /// </summary>
-        public float CameraAngle
+        public Vector3 CameraAngle
         {
             get { return cameraAngle; }
             set { cameraAngle = value; }
@@ -182,9 +182,9 @@ namespace Polarith.AI.Package
                                                      goal,
                                                      deltaTime * MoveSpeed * dist / Offset);
             Camera.transform.rotation = Quaternion.Lerp(Camera.transform.rotation,
-                                                     Quaternion.Euler(CameraAngle,
-                                                                      Camera.transform.rotation.eulerAngles.y,
-                                                                      Camera.transform.rotation.eulerAngles.z),
+                                                     Quaternion.Euler(CameraAngle.x,
+                                                                      CameraAngle.y,
+                                                                      CameraAngle.z),
                                                      Time.deltaTime);
         }
 

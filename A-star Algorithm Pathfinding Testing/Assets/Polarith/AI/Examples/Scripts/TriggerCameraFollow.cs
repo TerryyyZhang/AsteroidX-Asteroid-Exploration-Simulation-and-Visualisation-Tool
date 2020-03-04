@@ -25,7 +25,7 @@ namespace Polarith.AI.Package
 
         [Tooltip("Camera Angle of the 'CameraFollow' script when entering the trigger collider.")]
         [SerializeField]
-        private float cameraAngle = 25f;
+        private Vector3 cameraAngle = Vector3.one;
 
         [Tooltip("Target object of the 'CameraFollow' script hat should be focused when entering the trigger" +
             "collider.")]
@@ -61,7 +61,7 @@ namespace Polarith.AI.Package
         /// <summary>
         /// Camera Angle of the <see cref="CameraFollow"/> script when entering the trigger collider.
         /// </summary>
-        public float CameraAngle
+        public Vector3 CameraAngle
         {
             get { return cameraAngle; }
             set { cameraAngle = value; }

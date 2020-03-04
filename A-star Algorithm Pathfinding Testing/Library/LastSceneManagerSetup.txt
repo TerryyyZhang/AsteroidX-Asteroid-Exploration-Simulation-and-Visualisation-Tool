@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Polarith/AI/Examples/Scenes/Game3D/SpaceshipGalaxy.unity
+- path: Assets/Scenes/Obstacle Avoidance across Asteroid Belt.unity
   isLoaded: 1
   isActive: 1

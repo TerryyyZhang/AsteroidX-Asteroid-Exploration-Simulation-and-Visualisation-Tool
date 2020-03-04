@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Celestial Mechanics/Examples/4 System Example.unity
-  isLoaded: 1
-  isActive: 1
