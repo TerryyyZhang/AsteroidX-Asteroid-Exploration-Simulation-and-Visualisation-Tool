@@ -27,15 +27,24 @@ namespace Polarith.AI.Package
 
         [Tooltip("Affects how fast movement changes of the target are applied to the camera.")]
         [SerializeField]
-        private float moveSpeed = 3;
+        private float moveSpeed = 1;
+
+        [Tooltip("Affects how fast movement changes of the target are applied to the camera.")]
+        [SerializeField]
+        private float rotateLag = 10f;
 
         [Tooltip("Distance between camera and target.")]
         [SerializeField]
-        private float offset = 300;
+        private float offset = 500;
 
         [Tooltip("Target object the camera tries to follow.")]
         [SerializeField]
         private Transform target;
+
+        //Terry's modification
+        [Tooltip("Goal object the camera tries to look at.")]
+        [SerializeField]
+        private Transform goalObject;
 
         [Tooltip("Decides which parts of Unity´s update loops will be called.")]
         [SerializeField]
@@ -126,6 +135,17 @@ namespace Polarith.AI.Package
         //--------------------------------------------------------------------------------------------------------------
 
         /// <summary>
+        /// Terry
+        /// </summary>
+        public Transform GoalObject
+        {
+            get { return goalObject; }
+            set { goalObject = value; }
+        }
+
+        //--------------------------------------------------------------------------------------------------------------
+
+        /// <summary>
         /// Decides which parts of Unity´s update loops will be called.
         /// </summary>
         public UpdateType UpdateMode
@@ -170,7 +190,7 @@ namespace Polarith.AI.Package
                 return;
             }
 
-            Vector3 goal = new Vector3(Target.position.x + (Target.position.x - Camera.transform.position.x),
+            Vector3 goal = new Vector3(Target.position.x,
                                        Target.position.y,
                                        Target.position.z);
             goal -= Camera.transform.forward * Offset;
@@ -181,11 +201,21 @@ namespace Polarith.AI.Package
             Camera.transform.position = Vector3.Lerp(Camera.transform.position,
                                                      goal,
                                                      deltaTime * MoveSpeed * dist / Offset);
-            Camera.transform.rotation = Quaternion.Lerp(Camera.transform.rotation,
-                                                     Quaternion.Euler(CameraAngle.x,
-                                                                      CameraAngle.y,
-                                                                      CameraAngle.z),
-                                                     Time.deltaTime);
+
+            
+            if(GoalObject == null)
+            {
+                Camera.transform.rotation = Quaternion.Lerp(Camera.transform.rotation,
+                                                  Quaternion.Euler(CameraAngle.x, CameraAngle.y, CameraAngle.z),
+                                                  Time.deltaTime * rotateLag);
+            }
+            else {
+                Camera.transform.rotation = Quaternion.Lerp(Camera.transform.rotation,
+                                                  Quaternion.LookRotation(GoalObject.position - Target.position),
+                                                  Time.deltaTime * rotateLag);
+            }
+            //follow the rotation of the object
+            
         }
 
         #endregion // Methods

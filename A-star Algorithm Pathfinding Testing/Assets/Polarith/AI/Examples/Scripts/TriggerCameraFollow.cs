@@ -25,7 +25,7 @@ namespace Polarith.AI.Package
 
         [Tooltip("Camera Angle of the 'CameraFollow' script when entering the trigger collider.")]
         [SerializeField]
-        private Vector3 cameraAngle = Vector3.one;
+        private Vector3 cameraAngle = Vector3.up;
 
         [Tooltip("Target object of the 'CameraFollow' script hat should be focused when entering the trigger" +
             "collider.")]
@@ -88,7 +88,7 @@ namespace Polarith.AI.Package
             if (CameraFollow != null)
             {
                 CameraFollow.MoveSpeed = moveSpeed;
-                CameraFollow.CameraAngle = cameraAngle;
+                //CameraFollow.CameraAngle = cameraAngle;
                 CameraFollow.Target = target.transform;
             }
         }
