@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Manual Control with Trajectory Prediction.unity
+- path: Assets/Orbital Mechanics Demo/Scenes/Manual Control with Trajectory Prediction.unity
   isLoaded: 1
   isActive: 1

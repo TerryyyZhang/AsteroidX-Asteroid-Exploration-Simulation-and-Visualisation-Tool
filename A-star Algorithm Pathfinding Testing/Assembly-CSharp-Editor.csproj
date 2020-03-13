@@ -63,15 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\AircraftControllerEditor.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\CopterControllerEditor.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\EnvironmentUpdaterEditor.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\ObjectSpawnerEditor.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\SpaceShipControllerEditor.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\VehiclePhysicsEditor.cs" />
     <Compile Include="Assets\PathFinder 3D\Editor\PursuerEditor.cs" />
     <Compile Include="Assets\PathFinder 3D\Editor\SpaceManagerEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\AircraftControllerEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\CopterControllerEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\EnvironmentUpdaterEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\ObjectSpawnerEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\SpaceShipControllerEditor.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Editor\VehiclePhysicsEditor.cs" />
-    <None Include="Assets\Polarith\AI\Plugins\Editor\Polarith.AI.Editor.xml" />
+    <None Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Editor\Polarith.AI.Editor.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -331,10 +331,10 @@
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="Polarith.AI">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
     </Reference>
     <Reference Include="Polarith.AI.Editor">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Polarith/AI/Plugins/Editor/Polarith.AI.Editor.dll</HintPath>
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Editor/Polarith.AI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

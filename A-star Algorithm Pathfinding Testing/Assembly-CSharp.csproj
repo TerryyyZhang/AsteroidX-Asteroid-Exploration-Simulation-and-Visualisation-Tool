@@ -63,12 +63,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AsteroidBelt\BeltObject.cs" />
-    <Compile Include="Assets\AsteroidBelt\BeltSpawner.cs" />
-    <Compile Include="Assets\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\ColliderDetector.cs" />
-    <Compile Include="Assets\GoalSelector.cs" />
-    <Compile Include="Assets\lagCamera.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\AsteroidBelt\BeltObject.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\AsteroidBelt\BeltSpawner.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Asteroids Pack\Assets\Scripts\RandomRotator.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\AIState.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers\RootMotionController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers\VehicleController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\AircraftController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\AircraftPhysics.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\CopterController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\CopterPhysics.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\PidController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\RpyController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\SpaceshipController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Controllers3D\SpaceshipPhysics.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\EnvironmentUpdater.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\FramesPerSecond.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\MousePointer.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\AISync.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\ContactDamage.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\EnemyCannonController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\EnemySpawner.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\EntityInfo.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\EnvironmentAdapter.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\PhysicsController2D.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Network\PlayerController.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\ObjectCounter.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\ObjectSpawner.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\PathConnectorSetter.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\PerceiverConnector.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\RotorAnimation.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\SeekGround.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\SpaceshipUp.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\SpriteRotation.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\Teleporter.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TimerDestroy.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TriggerArriveTarget.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TriggerCameraFollow.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TriggerDisable.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TriggerParticles.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\TriggerStateTransisation.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Scripts\VehiclePhysics.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Scripts\ColliderDetector.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Scripts\GoalSelector.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Scripts\lagCamera.cs" />
+    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Scripts\UpdateLayer.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\DebugPanelController.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\FPSMeter.cs" />
     <Compile Include="Assets\PathFinder 3D\Debug tools\ProgressbarController.cs" />
@@ -104,49 +144,9 @@
     <Compile Include="Assets\PathFinder 3D\Scripts\Space processing\SpaceGraph.cs" />
     <Compile Include="Assets\PathFinder 3D\Scripts\Space processing\SpaceHandler.cs" />
     <Compile Include="Assets\PathFinder 3D\Scripts\Space processing\SpaceManager.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\AIState.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers\RootMotionController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers\VehicleController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\AircraftController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\AircraftPhysics.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\CopterController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\CopterPhysics.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\PidController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\RpyController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\SpaceshipController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Controllers3D\SpaceshipPhysics.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\EnvironmentUpdater.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\FramesPerSecond.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\MousePointer.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\AISync.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\ContactDamage.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\EnemyCannonController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\EnemySpawner.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\EntityInfo.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\EnvironmentAdapter.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\PhysicsController2D.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Network\PlayerController.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\ObjectCounter.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\ObjectSpawner.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\PathConnectorSetter.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\PerceiverConnector.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\RotorAnimation.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\SeekGround.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\SpaceshipUp.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\SpriteRotation.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\Teleporter.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TimerDestroy.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerArriveTarget.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerCameraFollow.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerDisable.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerParticles.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\TriggerStateTransisation.cs" />
-    <Compile Include="Assets\Polarith\AI\Examples\Scripts\VehiclePhysics.cs" />
-    <Compile Include="Assets\UpdateLayer.cs" />
-    <None Include="Assets\Polarith\AI\Plugins\Shaders\Splat.shader" />
-    <None Include="Assets\Polarith\AI\Plugins\Shaders\Extrude.shader" />
-    <None Include="Assets\Polarith\AI\Plugins\Polarith.AI.xml" />
+    <None Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Shaders\Splat.shader" />
+    <None Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Shaders\Extrude.shader" />
+    <None Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Polarith.AI.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -373,7 +373,7 @@
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="Polarith.AI">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Assets/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/A-star Algorithm Pathfinding Testing/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
