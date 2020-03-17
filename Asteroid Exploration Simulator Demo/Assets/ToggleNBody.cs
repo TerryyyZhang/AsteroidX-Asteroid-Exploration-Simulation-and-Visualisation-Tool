@@ -5,6 +5,10 @@ using Polarith.AI.Move;
 
 namespace Polarith.AI.Package {
     /// <summary>
+    /// There are two states to switch between in the spaceship. 
+    /// State 1: "Auto Pilot State" is for the spaceship seeking long range target. 
+    /// State 2: "Orbit Transfering State" is for the spaceship to transfer into a specific orbit using Lambert transfer algorithm, 
+    /// which will be activated when the spaceship is in short range.
     /// 
     /// Function 1:
     /// This script will have an attribute "dominantRange". 
@@ -59,32 +63,29 @@ namespace Polarith.AI.Package {
                 SwitchToOrbitingState();
 
                 transferShip.ResetOrbitTransfer();
-                //The following doesn't work and to be deleted. 
-                //In order to avoid crashing the goal asteroid, a perpendicular direction of transfer orbit need to be specified.
-                //Vector3 perpendicularPoint = ComputeRandomPerpendicular(centerNbody.transform.position) + transform.position;
-                //Vector3d perpendicularPoint2 = new Vector3d( perpendicularPoint.x, perpendicularPoint.y, perpendicularPoint.z ); 
-                //transferShip.SetTargetPoint(perpendicularPoint2);
-                
+
                 transferShip.DoTransfer(null);
                 doneDoTransfer = true;
                 print("Goal in range. Initiate orbit entering protocal.");
             }
 
-            ///temp testing
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                ChangeCenterObject(keyK);
-                SwitchToAutoPilotState();
-                print("Set course to " + centerNbody.gameObject.name + " .");
-                transferShip.ClearManeuvers();
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                ChangeCenterObject(KeyL);
-                SwitchToAutoPilotState();
-                print("Set course to " + centerNbody.gameObject.name + " .");
-                transferShip.ClearManeuvers();
-            }
+            
+        }
+
+        public void ToTarget1()
+        {
+            ChangeCenterObject(keyK);
+            SwitchToAutoPilotState();
+            print("Set course to " + centerNbody.gameObject.name + " .");
+            transferShip.ClearManeuvers();
+        }
+
+        public void ToTarget2()
+        {
+            ChangeCenterObject(KeyL);
+            SwitchToAutoPilotState();
+            print("Set course to " + centerNbody.gameObject.name + " .");
+            transferShip.ClearManeuvers();
         }
 
         public void SwitchToAutoPilotState()
@@ -98,7 +99,6 @@ namespace Polarith.AI.Package {
         public void SwitchToOrbitingState()
         {
             Vector3 pos = transform.position;
-            print(pos);
             Vector3 vel = new Vector3(-10, 0, 0);
             GravityEngine.Instance().UpdatePositionAndVelocity(thisNBody, pos, vel);
             GravityEngine.Instance().ActivateBody(gameObject);
@@ -123,7 +123,7 @@ namespace Polarith.AI.Package {
             {
                 if(env.Label.Equals(GoalAIMEnvironmentTag))
                 {
-                    env.GameObjects = new List<GameObject> { newCenterObject.gameObject };
+                    env.GameObjects = new List<GameObject> { CreateReferenceObject(newCenterObject) };
                 }
             }
         }
@@ -147,18 +147,38 @@ namespace Polarith.AI.Package {
         {
             return newCenterObject.gameObject.GetComponentInChildren<OrbitUniversal>().gameObject;
         }
+
         /// <summary>
-        /// !!!It doesn't work and to be deleted.
-        /// In order to avoid crashing the goal asteroid, a perpendicular direction of transfer orbit need to be specified.
-        /// see https://docs.unity3d.com/Manual/ComputingNormalPerpendicularVector.html
+        /// THIS METHOD DOES NOT WORK AND SHOULD BE REMOVED.
+        /// In order to avoid the transit orbit crashing the goal planet, we specify the periapsis of Lambertr transfer orbit to be the same as goal orbit.
+        /// This function help us calculate the periapsis points we would like to achieve in the back of the target planet. 
         /// </summary>
         /// <param name="destination"></param>
         /// <returns></returns>
-        private Vector3 ComputeRandomPerpendicular(Vector3 destination)
+        private Vector3d ComputePeriapsis()
         {
-            Vector3 side1 = transform.position - destination;
-            Vector3 side2 = Vector3.zero - destination; // for random generation
-            return Vector3.Cross(side1, side2).normalized*100;
+            Vector3 headingDirection = centerNbody.transform.position - transform.position;
+            double targetOrbitSemiParameter = getTargetObjectOrbit(centerNbody).GetComponent<OrbitUniversal>().GetSemiParam();
+            Vector3d periapsis = new Vector3d(headingDirection).normalized * targetOrbitSemiParameter *2 + new Vector3d(centerNbody.transform.position);
+            return periapsis;
+        }
+
+        private double GetCenterSemiParam()
+        {
+            return getTargetObjectOrbit(centerNbody).GetComponent<OrbitUniversal>().GetSemiParam(); 
+        }
+        /// <summary>
+        /// As the spaceship 
+        /// </summary>
+        /// <returns></returns>
+        private GameObject CreateReferenceObject(NBody newCenterObject)
+        {
+            //float semiParameter = (float) getTargetObjectOrbit(newCenterObject).GetComponent<OrbitUniversal>().GetSemiParam();
+            GameObject reference = new GameObject("Reference Goal");
+            reference.transform.SetParent(newCenterObject.transform);
+            reference.transform.localPosition = new Vector3(0, 1.5f, 0);
+            reference.transform.rotation = Quaternion.Euler(0, 0, 0);
+            return reference;
         }
     }
 }
