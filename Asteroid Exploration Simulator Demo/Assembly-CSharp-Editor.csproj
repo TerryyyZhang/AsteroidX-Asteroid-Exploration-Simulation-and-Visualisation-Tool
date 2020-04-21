@@ -63,12 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\AircraftControllerEditor.cs" />
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\CopterControllerEditor.cs" />
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\EnvironmentUpdaterEditor.cs" />
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\ObjectSpawnerEditor.cs" />
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\SpaceShipControllerEditor.cs" />
-    <Compile Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\VehiclePhysicsEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\AircraftControllerEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\CopterControllerEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\EnvironmentUpdaterEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\ObjectSpawnerEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\SpaceShipControllerEditor.cs" />
+    <Compile Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Examples\Editor\VehiclePhysicsEditor.cs" />
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Editor\Engine\GravityEngineEditor.cs" />
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Editor\Engine\GravityParticlesEditor.cs" />
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Editor\Engine\MultiStageRocketEditor.cs" />
@@ -108,7 +108,7 @@
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Scripts\Orbits\Editor\TestSetupUtils.cs" />
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Scripts\Orbits\Editor\TrajDataTest.cs" />
     <Compile Include="Assets\Orbital Mechanics Demo\GravityEngine\Scripts\SolarSystem\Editor\SolarTest.cs" />
-    <None Include="Assets\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Editor\Polarith.AI.Editor.xml" />
+    <None Include="Assets\Demo 3 with API\External Packages\Obstacle Avoidance across Asteroid Belt Demo\Polarith\AI\Plugins\Editor\Polarith.AI.Editor.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -358,12 +358,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Polarith.AI">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Assets/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
-    </Reference>
-    <Reference Include="Polarith.AI.Editor">
-      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Assets/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Editor/Polarith.AI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -378,6 +372,12 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Polarith.AI.Editor">
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Assets/Demo 3 with API/External Packages/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Editor/Polarith.AI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Polarith.AI">
+      <HintPath>C:/Users/terry/Documents/Unity3D/Project/Testing/Asteroid Exploration Simulator Demo/Assets/Demo 3 with API/External Packages/Obstacle Avoidance across Asteroid Belt Demo/Polarith/AI/Plugins/Polarith.AI.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

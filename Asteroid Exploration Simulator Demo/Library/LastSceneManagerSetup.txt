@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Demo 3 with API/Scenes/Demo 3 with API.unity
+- path: Assets/Scenes/Demo 4 - API.unity
   isLoaded: 1
   isActive: 1

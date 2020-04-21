@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2275727521053753836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2275727521053753834}
+  - component: {fileID: 2275727521053753837}
+  m_Layer: 0
+  m_Name: GravityEngine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2275727521053753834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2275727521053753836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2275727521053753837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2275727521053753836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65bd04de5bc741ed8845b1355fa3f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapToScene: 0
+  force: 0
+  algorithm: 0
+  optimizeMassless: 1
+  detectNbodies: 1
+  trajectoryPrediction: 0
+  trajectoryTime: 15
+  trajectoryCanvas: {fileID: 0}
+  markerParent: {fileID: 0}
+  trajectoryComputeFactor: 4
+  physToWorldFactor: 1
+  units: 0
+  _lengthScale: 1
+  massScale: 1
+  _timeScale: 1
+  bodies: []
+  evolveAtStart: 1
+  editorShowAdvanced: 0
+  editorShowScale: 0
+  editorCMfoldout: 0
+  editorShowTrajectory: 0
+  stepsPerFrame: 8
+  particleStepsPerFrame: 2
+  engineDt: 0.0020833333333333333
